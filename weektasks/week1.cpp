@@ -54,6 +54,45 @@ int main()
     return 0;
 }
 
-Answer2:
+Answer2: #DOUBT
+
+#include <algorithm>
+#include <iostream>
+#include<list>
+using namespace std;
+int main()
+{
+	list<int>s;
+	int total;
+	cout<<"Enter total no of elements:";
+	cin>>total;
+	int number;
+	for(int inp=0;inp<total;inp++){
+	    cin>>number;
+	    s.push_back(number);
+	}
+	int n;
+	cout<<"Enter number of permutations:";
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+	    bool val= next_permutation(s.begin(),s.end());
+	    if(val == false)
+    	{
+    		cout << "\nNo Word Possible"<< endl;
+    		break;
+    	}		
+    	else
+    	{   
+    	    cout<<"\nNext permutation:";
+    	    for(auto j=s.begin();j!=s.end();j++){
+    	        cout<< *j;
+    	 }
+    		
+    	}
+    	    
+       }
+    return 0;
+}
 
 
