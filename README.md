@@ -1,3 +1,4 @@
 # advanved-programming-lab
 Advanced programming Lab repo
-LINK - https://apl.ajaykumarvarma.live/weektasks/(weeknumber.cpp)
+[Link to Google](https://apl.ajaykumarvarma.live/weektasks/)
+after / enter for example week1.cpp
