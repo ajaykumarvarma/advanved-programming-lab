@@ -54,45 +54,34 @@ int main()
     return 0;
 }
 
-Answer2: #DOUBT
+Answer2: 
 
-#include <algorithm>
 #include <iostream>
-#include<list>
+#include <algorithm>
 using namespace std;
-int main()
-{
-	list<int>s;
-	int total;
-	cout<<"Enter total no of elements:";
-	cin>>total;
-	int number;
-	for(int inp=0;inp<total;inp++){
-	    cin>>number;
-	    s.push_back(number);
-	}
-	int n;
-	cout<<"Enter number of permutations:";
-	cin>>n;
-	for(int i=0;i<n;i++)
-	{
-	    bool val= next_permutation(s.begin(),s.end());
-	    if(val == false)
-    	{
-    		cout << "\nNo Word Possible"<< endl;
-    		break;
-    	}		
-    	else
-    	{   
-    	    cout<<"\nNext permutation:";
-    	    for(auto j=s.begin();j!=s.end();j++){
-    	        cout<< *j;
-    	 }
-    		
-    	}
-    	    
-       }
-    return 0;
+int main() {
+    string number ;
+    
+    cout<<"enter number"<<endl ;
+    cin>>number ;
+   cout<<"enter  lexicographically next  " << endl ;
+   int n ;
+   cin>>n ;
+   for(int i = 0; i< n ;  i++) {
+      bool val = next_permutation(number.begin(), number.end());
+      if (val == false) {
+         cout << "No next permutation" << endl;
+         break;
+      } else
+      {
+      int c=1 ;
+        
+      }
+ 
+      
+      
+   }
+   cout<<number<<endl;
 }
 
 
