@@ -96,3 +96,32 @@ int main()
 }
 
 
+------------------------------------------------------------------------
+question - Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
+•	'.' Matches any single character.
+•	'*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial
+	
+	
+code:
+#include<iostream>
+#include<string>
+#include<regex>
+using namespace std;
+int main()
+{
+    string s,p;
+    cout<<"Enter string: ";
+    getline(cin, s, '\n');
+    cout<<"Enter pattern: ";
+    getline(cin, p, '\n');
+    regex obj(p);
+    smatch res;
+    regex_match(s, res, obj);
+    if(res[0]==s)
+        cout<<"True";
+    else
+        cout<<"False";
+    return 0;
+}
+	
