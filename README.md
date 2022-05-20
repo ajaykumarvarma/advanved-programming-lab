@@ -1,5 +1,4 @@
-# advanved-programming-lab
-Advanced programming Lab
+# Advanved-Programming-Lab
 
 Lab Tasks Links below:
 
