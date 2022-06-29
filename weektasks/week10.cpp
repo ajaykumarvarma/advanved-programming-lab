@@ -18,12 +18,20 @@ int main ()
     {
       if (arr[j] == key - 1)
 	{
-	    c = 1;
+	    c+= 1;
 	  cout << j + 1;
 	  
 	  break;
 	}
+	 else if (arr[j] > key )
+	{
+	    c+= 1;
+	  cout << j ;
+	  
+	  break;
     }
+    }  
+  
   if (c == 0)
     {
      for (j = 0; j < n; j++)
